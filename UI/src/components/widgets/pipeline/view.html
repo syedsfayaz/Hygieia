@@ -10,8 +10,9 @@
             </div>
         </div>
     </header>
-    <section>
-        <div class="pipeline-row clearfix" ng-repeat="unit in pipelineView.units">
+   <section>
+   <div class="pipeline-row clearfix" ng-repeat="unit in pipelineView.units track by $index">
+            <span ng-show="$last">
             <div class="col-xs-3 col-md-2">
                 <div class="row">
                     <div class="pipeline-unit-name dash-overflow">
@@ -35,6 +36,7 @@
                     </div>
                 </div>
             </div>
+            </span>
         </div>
     </section>
 </div>
