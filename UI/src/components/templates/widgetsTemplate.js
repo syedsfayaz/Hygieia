@@ -12,8 +12,8 @@
     function WidgetTemplateController($scope) {
         var ctrl = this;
         ctrl.tabs = [
-            {name: "Widget"},
             {name: "Pipeline"},
+            {name: "Widget"},
             {name: "Cloud"}
         ];
         ctrl.pipelineInd = false;
